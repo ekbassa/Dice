@@ -1,0 +1,87 @@
+/* 
+    normalize basic properties value
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right,#9932cc,#F4A460);
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#9932cc,#F4A460);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hide-container {
+    display: none;
+}
+
+
+.first-page {
+    margin: 30px auto;
+    height: 80%;
+    width: 80%;
+    border: #9932cc solid 10px;
+    border-radius: 35px;
+    padding-left: 40px;
+
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.select-score{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+#select-score {
+    width: 350px;
+    height: 40px;
+    border-top: black solid 2px;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 50px;
+    width: 350px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    background: #d5cbc2;
+    cursor: pointer;
+
+}
+.btn:hover {
+    background-color: #7554a5; /* Darker Purple on Hover */
+  }
+
+  .btn:active {
+    transform: scale(0.95); /* Scale down when clicked */
+  }
+

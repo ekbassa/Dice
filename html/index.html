@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-hU5SIn5FGS62Ch8fcxNm+3jsZZsyKY0md9LXDx7fB7a9pPsfxy2O7vDpRfnEKBBG" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="..//css/dice.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/players.css">
+    <title>Dice</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="players-container hidden" >
+                <section class="player-1-section">
+                    <div class="total player-title">
+                        <h1>PLAYER 1</h1>
+                        <p class="color-crimson">score = 0 </p>
+                    </div>
+                    <div class="current">
+                        <h2>CURRENT</h2>
+                        <p>  0 </p>
+                    </div>
+                </section>
+
+
+                <section class="dice-section">
+                    
+                    <input type="button" id="btn-new-game" value="NEW GAME" class="btn">
+                </section>
+
+
+
+
+
+                <section class="payer-2-section">
+                    <h1>PLAYER 2</h1>
+                </section>
+            </div>
+
+        </section>
+        <div class="container">
+            <div class="first-page">
+                <h1>Game Instructions:</h1>
+                <ul class="items">
+                    <li class="fisrt-paragraph">
+                        <p>In your turn- roll the dice (at least once) and accumulate the result in "current"</p>
+                    </li>
+                    <li class="second-paragraph">
+                        <p>You can roll again or click "Hold" to save the points from " Current and end the turn.</p>
+                    </li>
+                    <li class="third-paragraph">
+                       <p> Note! if you get 6-6 - you will lose all points from "current" and turn will go to your opponent</p>
+                    </li>
+                    <li class="fourth-paragraph">
+                        <p>If you managed to reach exactly the target score - you win! if you passed it - you loose</p>
+                    </li>
+                </ul>
+                <div class="select-score">
+                    <h1>Please select a target score</h1>
+                    <input type="number" id="select-score">
+                    <input type="button" id="start-game" value="Start Game" class="btn">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/app.js"></script>
+    
+</body>
+</html>
